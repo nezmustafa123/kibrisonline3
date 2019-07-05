@@ -1,0 +1,2273 @@
+/*==========*/
+/*BASE STYLES*/
+/*==========*/
+
+*,
+*::after
+*::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --anthracite-grey: #293133;
+    --primary-color: #3b79bd;
+    --secondary-color: #67319a;
+    --tertiary-color: #f31d98;
+    --quaternary-color: #ef892a;
+    --quinary-color: #efcb2a;
+}
+
+
+
+
+@font-face {
+  font-family:'panton';
+    
+  src:  url('assets/fonts/Panton-Regular.otf') format('otf'), /* IE9 Compat Modes */
+       url('assets/fonts/Panton-Regular.otf') format('woff'),
+       url('assets/fonts/Panton-Regular.otf') format('woff2'),
+
+       url('assets/fonts/Panton-BlackCaps.otf') format('otf'), /* IE6-IE8 */
+       url('assets/fonts/Panton-Light.otf') format('woff2'),  /*Super Modern Browsers*/ 
+       url('assets/fonts/Panton-LightitalicCaps.otf') format('woff'); /* Pretty Modern Browsers */
+    font-style: normal;
+    font-weight: 100;
+  
+}
+
+
+body {
+  font-family: 'panton', sans-serif;;
+  color: #767676;
+  font-size: 1.75rem;
+/* text-transform: lowercase;*/
+}
+
+
+
+
+
+
+
+/*==========*/
+/*==========*/
+
+
+
+
+
+/*==========*/
+/*Reusable components*/
+/*==========*/
+
+
+
+.navbar {
+/*    background-color: #EA0A2A;*/
+    background-color: #293133;
+}
+
+main .page {
+    font-size: 0.8rem;
+}
+
+#kibrislogo {
+/*    width: 1500px:*/
+}
+
+.logo {
+/*   width: 100%;*/
+}
+#tab-buttons {
+    font-size: 1.4rem;
+    font-family: 'Audiowide', cursive;
+    line-height: 1.8rem;
+}
+
+
+
+
+
+.item-row {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+
+.info {
+    color: #767676;
+    font-weight: bold;
+}
+
+
+
+
+.primary-color {
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: white;
+}
+.secondary-color {
+    padding: 10px;
+    background-color: var(--secondary-color);
+    color: white;
+}
+.tertiary-color {
+    padding: 10px;
+    background-color: var(--tertiary-color);
+    color: white;
+}
+.quaternary-color {
+    padding: 10px;
+    background-color: var(--quaternary-color);
+    color: white;
+}
+.quinary-color {
+    padding: 10px;
+    background-color: var(--quinary-color);
+    color: white;
+}
+
+
+
+#paket {
+    border-top: 0px solid #fff;
+    padding-top: 6rem;
+}
+
+#questions {
+    
+    padding-top: 6rem;
+}
+
+
+
+
+a { 
+    text-decoration: none !important;
+}
+
+a.nav-link:hover{
+    color: whitesmoke;
+}
+
+
+
+
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+
+
+.red {
+    padding: 10px;
+    background-color: rgb(234,10,42);
+    color: white;
+    
+}
+.innercol {
+    width: 100%;
+    text-align:center;
+    margin: auto;
+}
+
+@media only screen and (min-width: 768px) {
+    
+    .innercol {
+        font-size: 12px;
+    }
+    
+}
+
+
+.box {
+  border-radius: 40px;
+    
+}
+
+.bottomborder {
+    border-bottom: dotted 1px gray;
+}
+
+
+.row {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+
+
+
+.navlink {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+nav-item {
+    border-radius: 1rem;
+}
+
+
+
+.align-text-bottom {
+    position: absolute;
+    bottom: 0%;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+   
+    
+}
+
+
+div .col-3 {
+    border-right: 1px dashed grey;
+}
+
+
+.box .align-middle {
+    color: rgb(58,121,189);
+    position: relative;
+    text-align: center;
+    width: 100%;
+    top: 25%;
+    height: 100%;
+}
+
+ button.navbar-toggler {
+          position: absolute;
+          top: 0;
+          right: 0;
+          background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='1.7' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+
+          
+          
+          
+}
+
+
+div.align-middle span .num {
+/*    font-size: 2rem !important;*/
+    
+}
+
+.bit {
+    font-size: 1rem;
+}
+
+
+.center {
+    text-align: center;
+}
+
+
+h6 {
+    font-size: 0.8rem;
+    margin-top : 70px;
+}
+
+
+.questions {
+    margin-top: 20px !important;
+    background-image: url(assets/img/womanheadphones.jpg) !important;
+    background-repeat: no-repeat;
+    background-color: none !important;
+    background-size: cover;
+}
+
+
+.page-footer {
+    background-color: #293133;
+}
+.page-footer p {
+    font-size: 0.9rem
+}
+.map {
+    
+}
+
+
+h2 i {
+    margin-right: 0.5rem;;
+}
+
+
+h5.adres {
+    margin-top: 0;
+}
+
+
+
+
+
+i.fas.fa-map-marker-alt,
+i.fas.fa-phone-volume,
+i.fas.fa-envelope-square,
+i.fas.fa-envelope,
+i.fas.fa-headset {
+    margin-right: 0.6rem;
+}
+
+
+textarea[name=Mesaj] {
+    resize: none;
+    height: 20rem;
+}
+
+
+
+
+
+.btn__sale {
+    position: absolute;
+    bottom: 0.2rem;
+    background-color: #fdd700;
+	-moz-border-radius: 1.75rem;
+	-webkit-border-radius: 1.75rem;
+	border-radius: 1.75rem;
+    display: inline-block;
+	cursor: pointer;
+	color: #000000;
+	font-family: Arial;
+	font-size: 1rem;
+	padding: 1rem 2rem;
+	text-decoration: none;
+	
+    
+    
+    
+    
+    
+    
+    
+/*    display: inline-block;*/
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+
+.myButton:hover {
+	background-color:#5cbf2a;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+/* =========================
+    CARD
+   ========================= */
+
+
+
+
+.card-row {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+/*    bottom: 50%;*/
+    margin: 0 auto;
+ 
+}
+
+.maincontainer{
+  position: relative;
+  /*width: 250px;*/
+  height: 500px;
+  background: none;
+  margin-top: 30px;
+/*  top: 0%;*/
+  /*left: 50%;*/
+  /*transform: translate(-50%, -50%);*/
+
+}
+
+/* THE CARD HOLDS THE FRONT AND BACK FACES */
+
+.thecard{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+/*  border-radius: none;*/
+  transform-style: preserve-3d;
+  transition: all 2s ease;
+}
+
+
+
+/*CARD COLORS*/
+
+
+
+.wifi {
+    color: var(--primary-color);
+}
+
+.adsl {
+    color: var(--secondary-color);
+}
+
+
+.vdsl {
+    color: var(--tertiary-color) !important;
+}
+
+
+
+
+.thecard h2 {
+    font-size: 1rem;
+}
+
+
+
+h3.num {
+    margin-top: 0rem;
+}
+
+
+
+
+
+/* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+ .thefront{
+  position: absolute;
+  border-radius: 30px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+/*  border-radius: none;*/
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: #fff;
+  color: #000;
+  z-index: 2;
+}
+
+
+/*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+.thefront h1, .theback h1{
+  font-family: 'zilla slab', sans-serif;
+  color: rgb(102,102,102);
+/*  padding: 20px;*/
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+}
+
+.thefront p, .theback p{
+  font-family: 'zilla slab', sans-serif;
+  color: rgb(102,102,102);
+  padding: 20px;
+  font-weight: normal;
+  font-size: 12px;
+  text-align: center;
+}
+
+h1.bit {
+/*
+    font-size: 2rem;
+    color: rgb(58,121,189);
+*/
+}
+
+
+div.speed {
+    font-size: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+.num {
+    font-size: 5rem;
+/*    color: rgb(58,121,189);*/
+    font-weight: 900;
+    line-height: .9;
+    letter-spacing: -0.3rem;
+}
+
+.wifi-em {
+    color: var(--primary-color);
+}
+
+
+#fiveem {
+    font-size: 6.5rem;
+    font-weight: 900;
+}
+
+#tenem {
+    font-size: 6.5rem;
+    font-weight: 900;
+}
+
+#fifteenem {
+    font-size: 6.5rem;
+    font-weight: 900;
+}
+
+
+
+
+
+.netfeatures {
+    font-weight: 900;
+}
+
+span.bit {
+      font-size: 1.5rem;
+/*     color: rgb(58,121,189);*/
+     
+}
+
+
+
+.adsl-card .thefront {
+/*    color: var(--primary-color);*/
+/*     color: var(--primary-color) !important;*/
+    width: 120%;
+    border-radius: 5rem !important;
+    
+} 
+
+
+
+
+h1.dedicated-heading {
+    
+}
+
+
+
+p.dedicated-info {
+    text-align: center;
+   
+}
+
+
+
+p.symmetric-info {
+    text-align: center;
+}
+
+
+
+h2#ulas {
+    
+}
+
+
+.speed .wifi > * {
+    color:  var(--primary-color);
+}
+
+.speed .vdsl > * {
+    color: var(--tertiary-color);
+}
+
+.speed .adsl > * {
+    color:  var(--secondary-color);
+}
+
+
+
+div.col-4.dedicated  {
+   width: initial;
+   height: 100%;
+}
+
+/*div.col-4.dedicated img {
+    width: 100%;
+}*/
+
+
+.nav-pills .nav-item .active {
+  background-color: white;
+    padding: 3px;
+    display: block;
+}
+
+
+
+div.price {
+    font-size: 4rem;
+    position: relative;
+    padding-top: 20px;
+   
+}
+
+
+div.dedicated-back .price {
+    padding: 0px;
+}
+
+
+
+.border-dash-top {
+    border-top: 2px dashed #ccc;
+}
+
+.border-dash-left {
+    border: 1px dashed #ccc;
+    border-radius: 20%;
+    padding: 0.6rem;
+    margin: 0.1rem;
+}
+
+div.row .no-gutters {
+    font-size: 0.9rem; 
+    height: auto;
+}
+
+
+
+
+div.col-4.dedicated {
+    padding: 0px !important;
+    
+
+}
+
+
+div.col-4.dedicated img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+div.col-4.symmetric {
+    padding: 0px !important;
+    
+}
+
+
+
+div.col-4.symmetric img {
+    width: 100%;
+}
+
+
+.row .col-2 {
+    width: 200% !important;
+    padding: 0px !important;
+}
+
+
+
+.row .col-2 .box {
+    width: 100%;
+}
+
+
+div.maincontainer.adsl {
+    margin-top: 0px !important;
+}
+
+
+
+
+div.maincontainer.adsl .col{
+font-size: 0.6rem;
+}
+
+
+div.row .col-2 {
+    margin: 0 auto;
+}
+#adsl {
+    margin-left: -1px;
+}
+
+div.row#adslrow {
+    margin-left: -35px  !important;
+} 
+
+
+div#adsl.tab-pane {
+   margin: 0 auto;
+}
+     
+.adsl ul.netfeatures{
+    list-style: none !important;
+    padding: 0;
+    margin-bottom: 0;
+    line-height: 1.3rem;
+/*    font-size: 0.8rem;*/
+    
+}
+
+
+h3.num.wifi em {
+/*    font-weight: 900 !important;*/
+}
+
+
+div.border-dash-left {
+/*    font-size: 0.8rem !important;*/
+}
+
+
+.features {
+    padding: 0px;
+    line-height: 1.3rem;
+}
+
+
+h2.adsl-question {
+margin-bottom: 70%;
+}
+
+
+h3.wifi em {
+    
+   font-size: 5rem !important;
+}
+
+
+
+
+.bit em {
+    font-size: 1.3rem;
+}
+
+
+
+
+
+
+
+.adsl ul.netfeatures {
+    color: #1a51a3;
+    
+}
+
+
+div.adsl h1 {
+    padding: 0px;
+    font-size: 1.2rem;
+}
+
+h3.num.adsl {
+    
+font-family: Sans-serif;
+/*    font-weight: bold;*/
+
+ font-weight: bold;
+ font-weight: 900 !important;
+/**/
+}
+
+
+h3.num.vdsl {
+    font-family: Sans-serif;
+    font-weight: bold;
+    font-weight: 900 !important;
+    
+}
+
+
+ul.netfeatures.vdsl {
+    color: rgb(174,31,138);
+}
+
+
+
+ul.netfeatures.vdsl {
+    list-style: none !important;
+    padding: 0;
+    margin-bottom: 0;
+    line-height: 1.3rem;
+    font-size: 0.8rem;
+    font-weight: 900;
+    
+}
+
+
+/*.vdsl co {*/
+
+/*}*/
+
+div.adsl-package-features.speed {
+    color: white;
+    background-color: var(--secondary-color);
+    position: relative;
+}
+
+
+
+div.wifi-package-features {
+    color: white;
+    background-color: var(--primary-color);
+    position: relative;
+}
+
+
+div.vdsl-package-features {
+    color: white;
+    background-color: var(--tertiary-color);
+}
+
+
+.question {
+    font-weight: bold;
+    margin-bottom: 40%;
+}
+
+
+
+
+#wifi-heading-one {
+    position: absolute;
+    padding-bottom: 20px;
+}
+
+#wifi-heading-two {
+    position: absolute;
+    padding: 20px;
+    
+    
+}
+
+#wifi-heading-three {
+    position: absolute;
+/*    padding: 20px;*/
+}
+
+#wifi-heading-four {
+    position: absolute;
+    padding: 20px;
+}
+
+
+#wifi-heading-five {
+    position: absolute;
+/*    padding: 20px;*/
+}
+
+#wifi-heading-six {
+    position: absolute;
+    padding: 20px;
+}
+
+
+
+.adsl-heading {
+    position: absolute;
+    
+}
+
+#adsl-heading-one {
+    padding: 20px;
+}
+
+#adsl-heading-three {
+    padding: 20px;
+}
+
+#adsl-heading-five {
+    padding: 20px;
+}
+
+#adsl-heading-seven {
+    padding: 20px;
+}
+
+#adsl-heading-nine {
+    padding: 20px;
+}
+
+
+
+#vdsl-heading-one {
+    position: absolute;
+    margin-top: 60px;
+    
+}
+
+#vdsl-heading-two {
+/*
+    position: absolute;
+    bottom: 10%;
+*/
+    
+}
+
+
+#vdsl-heading-three {
+    position: absolute;
+    margin-top: 60px;
+}
+
+
+
+
+#vdsl-heading-four {
+/*    position: absolute;*/
+}
+
+
+
+#vdsl-heading-five {
+    position: absolute;
+    margin-top: 60px;
+}
+
+
+#vdsl-heading-six {
+    position: 
+   
+}
+
+
+h2.wifi-question, h2.wifi-heading {
+    font-size: 1.3rem;
+}
+
+h2.vdsl-question, h2.vdsl-heading {
+    font-size: 1.2rem;
+}
+
+
+h2.adsl-question, h2.adsl-heading {
+    font-size: 1.2rem;
+}
+
+
+.fal fa-music {
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+.heading {
+    top: 50%;
+    width: 100%;
+    margin-bottom: 20%;
+   
+}
+
+.btn-warning {
+    width: 100px;
+    padding: 10px;
+    transform: translate(-50%, 50%);
+    border-radius: 40%;
+    display: block;
+    left: 50%;
+    bottom: 8%;
+    position: absolute;
+    background-color: rgb(253,215,0);
+}
+
+
+
+
+
+
+div .vdsl-price {
+/*     margin-bottom: 10px;*/
+    font-size: 0.9rem !important;
+    padding: 0px !important;
+}
+
+
+
+
+
+ .col.lira {
+    font-size: 0.9rem !important;
+    color: rgb(122,122,122);
+    margin-bottom: 10px;
+}
+
+
+span.month, .text-truncate {
+    font-weight: 900;
+    color:#888888;    
+     text-shadow: 1px 0 #888888;
+     letter-spacing:1px;
+     font-weight:bold;
+    
+}
+
+
+.dedicated-para {
+    font-size: 1rem;
+/*    text-transform: lowercase !important;*/
+}
+
+
+.dedicated-info {
+    font-size: 1rem;
+    color: rgb(122,122,122);
+    font-weight: bold;
+    
+}
+
+
+.symmetric-para {
+    font-size: 1rem;
+}
+
+.symmetric-info {
+    
+    font-size: 1rem;
+    color: rgb(122,122,122);
+/*    padding-top: 20px;*/
+    font-weight: bold;
+    
+    
+}
+
+
+
+
+div.col-8 .price {
+    padding: 0px;
+}
+
+
+ul li {
+    list-style: none;
+}
+
+
+
+.container-print h6:nth-child(2)  {
+    line-height: 1rem;
+    margin-top: 1.2rem;
+    
+    
+}
+
+
+/* =========================
+   UI CARD
+   ========================= */
+
+
+/*
+card_body {
+  background: #111d27;
+  color: #111;
+  min-width: 390px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: hidden;
+  position: relative;
+  padding: 50px 20px;
+}
+
+.pricing {
+	text-align: center;
+	border: 1px solid #f0f0f0;
+	color: #777;
+	font-size: 14px;
+	padding-left: 0;
+	margin-bottom: 30px;
+  font-family: 'Lato';
+}
+.pricing img {
+	display: block;
+	margin: auto;
+	width: 32px;
+}
+
+li.col-4-md.price-bottom {
+    padding: 0px;
+    margin: 0 auto;
+}
+.pricing li:first-child,
+.pricing li:last-child {
+	padding: 0px 0px;
+}
+
+li.price-bottom h3 {
+    font-size: 0.9rem;
+}
+.pricing li {
+	list-style: none;
+	padding: 13px;
+}
+.pricing li + li {
+	border-top: 1px solid #f0f0f0;
+}
+.pricing big {
+	font-size: 32px;
+}
+.pricing h3 {
+	margin-bottom: 0;
+  font-size: 1.2rem;
+}
+.pricing span {
+	font-size: 12px;
+	color: #999;
+	font-weight: normal;
+}
+.pricing li:nth-last-child(2) {
+	padding: 0px 0px;
+}
+.pricing button {
+	width: auto;
+	margin: auto;
+	font-size: 15px;
+	font-weight: bold;
+	border-radius: 50px;
+	color: #fff;
+	padding: 9px 24px;
+	background: #aaa;
+	opacity: 1;
+	transition: opacity .2s ease;
+  border: none;
+  outline: none;
+}
+.pricing button:hover {
+	opacity: .9;
+}
+.pricing button:active {
+	box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+/* pricing color */
+
+*/
+/*
+.p-purple big,
+.p-purple h3 {
+	color: rgb(174,31,138);
+}
+.p-purple button {
+	background: rgb(174,31,138);
+}
+.p-yel big,
+.p-yel h3 {
+	color: #ffbb42;
+}
+.p-yel button {
+	background: #ffbb42;
+}
+.p-red big,
+.p-red h3 {
+	color: #e13c4c;
+}
+.p-red button {
+	background: #e13c4c;
+}
+.p-blue big,
+.p-blue h3 {
+	color: #3f4bb8;
+}
+.p-blue button {
+	background: #3f4bb8;
+}
+
+
+
+*/
+
+
+/* =========================
+   CSS ACCORDION 2
+   ========================= */
+
+
+
+
+body {
+  overflow-y: scroll
+}
+
+.accordion {
+  position: relative;
+  border: 1px solid #e0e0e0;
+  font-size: 1.4rem;
+}
+
+.accordion .item {
+  margin-top: 5px;
+}
+
+.accordion .content {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+  box-sizing: content-box;
+  height: 340px;
+}
+
+.accordion .content p {
+  padding: 20px;
+  margin: 0;
+  text-align: left;
+  max-width: initial;
+}
+
+.content.hidden {
+  display: none;
+}
+
+.accordion .trigger {
+  text-decoration: none;
+}
+
+a.trigger {
+    background-color:  #293133 !important;
+}
+.accordion .title {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 10px;
+  font-size: 1em;
+  background-color: rgb(234, 10, 42);
+  color: #FFFFFF;
+  border: 1px solid #293133;
+  cursor: pointer;
+}
+
+.accordion .title:hover {
+  background-color: red;
+}
+
+.accordion .title::after {
+  position: absolute;
+  top: calc(50% - 12px);
+  right: 20px;
+  width: 15px;
+  height: 15px;
+  border-left: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+  transform: rotate(-135deg);
+  transition: 0.7s;
+  content: "";
+}
+
+.accordion .title.open::after {
+  transform: rotate(-45deg);
+  transition: 0.7s;
+}
+
+
+/* =========================
+   MAP
+   ========================= */
+
+
+
+#googleMap {
+    height: 400px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+
+
+.btn-outline-danger {
+    color: white;
+    border-color: white;
+    padding:  5px 50px;
+}
+
+.btn-outline-danger:hover {
+    background-color: rgb(234,10,42);
+    border-color: white;
+}
+
+div#detail-box:not(:first-child){
+   margin-top: 70px;
+}
+
+
+
+section.contact {
+    background-color: #293133;
+}
+
+
+
+
+
+
+h2#ulas {
+    position: relative;
+    padding: 0.8rem;
+}
+
+
+h2#ulas:after {
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 10px;
+    bottom: 0;
+    left: 40%;
+    border-bottom: 2px solid white;
+    
+}
+
+
+
+
+
+
+
+
+.footer-icon {
+    border: solid 1px white ;
+    border-radius: 50%;
+    padding: 0.4rem;
+}
+
+
+
+
+
+
+
+
+#detail-box {
+    border: 2px solid white;
+    border-radius: 5%;
+    padding: .8rem;
+/*    display: inline;*/
+/*    margin-right: 0.2rem;*/
+   
+    max-width: calc(50% - 5.9rem);
+/*    margin-right: 90px;*/
+
+    
+   
+}
+
+
+#gonder {
+    margin-top: 1.5rem;
+    float: right;
+}
+
+#gonder:hover {
+    color: #293133;
+    background-color: white;
+}
+
+.copyright {
+  margin: 0 auto;
+  background-color: #293133 ;
+}
+
+
+
+
+
+/***************MEDIA QUERIES****************/
+
+
+@media (min-width: 576px) {
+.container.logo {
+    max-width: 100% !important;
+    
+}
+    h2#ulas {
+        padding-top: 0 !important;
+    }
+    .clean-block .block-heading {
+        padding-top: 0;
+
+}
+    
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 991px) {
+    h2.wifi-question.question {
+        margin-top: -6rem;
+    }
+}
+
+
+
+
+
+
+@media only screen and (min-width: 992px) {
+    
+    
+div.container.logo {
+        max-width: 90% !important;
+    }
+
+    
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+    
+    .accordion {
+        font-size: 1.2rem;
+    }
+    
+    div#detail-box {
+    max-width: 100%;
+    margin-bottom: 1.9rem;
+}
+}
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    adsl-price  div.col.lira {
+        font-size: 0.1rem;
+    }
+    h2.adsl-question.question {
+        margin-top: -3rem;
+    }
+    
+  
+}
+
+
+
+
+@media only screen and (max-width: 991px) {
+    .wifi-question, .wifi-heading {
+        font-size: 1.3rem !important;
+       
+    }
+    
+    div.adsl-package-features.package-features.speed h2 {
+        font-size: 1.5rem !important;
+    }
+    
+    .wifi-question {
+    margin-top: -3.7rem;
+    }
+    
+    #wifi-heading-one {
+        margin-top: -3rem;
+    }
+    
+    #wifi-heading-three {
+        margin-top: -3rem;
+    }
+    
+    #wifi-heading-five {
+        margin-top: -3rem;
+    }
+    
+    
+   
+    
+    a.nav-link{
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    
+    div.container.logo {
+        width: 100%;
+    }
+    
+     .clean-navbar .navbar-nav .nav-link {
+         color: white;
+        font-size: 1.1rem;
+         
+    }
+    
+    
+    ul.nav.navbar-nav.ml-auto.text-center {
+        width: 100%;
+    }
+    
+    
+    
+    
+    
+}
+
+
+
+
+
+@media only screen and (max-width: 769px) {
+    
+    
+    
+    
+    li .innercol {
+        font-size: 1.3rem;
+    }
+    
+    
+    
+    
+    
+    ul.nav {
+        display: flex !important;
+        flex-direction: column !important;
+        height: auto !important;
+    }
+    
+    .nav-item {
+        flex-direction: column;
+        
+        font-size: 0.5rem;
+        width: 100%;
+        margin-bottom: 0.2rem;
+/*
+        overflow: auto;
+        
+*/
+    }
+    
+    
+    li.nav-item a {
+        font-size: 0.9rem;
+       
+    }
+    
+    .col-md-2 h3.num {
+    margin-top: 0;
+    font-size: 6rem;
+    
+    
+}
+    
+    
+    h2.wifi {
+/*       font-size: 0.5rem !important;*/
+        padding-bottom: 0px !important;
+        white-space: nowrap;
+       overflow: hidden;
+    }
+
+    .clean-block.clean-info h3 {
+        margin-top: 0rem;
+    }
+
+    
+    
+    div.border div.col-4 {
+        display: inline-block;
+    }
+    
+    
+    div.border-dash-top-speed h2 {
+        font-size: 0.5rem;
+    }
+    
+    
+    .col.lira {
+    font-size: inherit;
+    
+    }
+    
+    ul.netfeatures {
+          font-size: 1rem; 
+        }
+    div.border-dash-top {
+        padding-top: 0px;
+        margin-bottom: 10px;
+    }
+    
+    
+    div.adsl-package-features.package-features h2{
+        color: white;
+    }
+    
+    
+    .dedicated-para {
+       font-size: 0.8rem;
+       color: rgb(122,122,122);
+       font-weight: 300;
+    }
+    
+    
+    
+    .dedicated-info {
+        margin-top: 10px;
+    }
+    
+
+    .symmetric-para {
+        font-size: 1.2rem;
+    }
+    
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+    h1.symmetric-heading {
+/*        font-size: 1.4rem;*/
+    }
+    ul.symmetric-para {
+        font-size: 1.2rem;
+    }
+    
+    ul.dedicated-para {
+        font-size: 1.2rem;
+    }
+    
+    div.wifi-package-features.package-features.speed h2 {
+        font-size: 1.5rem !important;
+    }
+    
+    
+}
+
+@media only screen and (min-width: 767px) {
+    .adsl ul.netfeatures {
+        font-size: 0.8rem;
+    }
+    
+   .adsl div.border-dash-top {
+        margin-bottom: 10px;
+    }
+    
+    
+    button.navbar-toggler {
+        right: 0;
+    }
+    
+    
+   
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    
+    .innercol {
+        font-size: 12px;
+    }
+    
+  
+ .container.logo {
+    max-width: 100%;
+}
+}
+
+
+@media only screen and (min-width: 768px) {
+    
+    .innercol {
+        font-size: 12px;
+    }
+    
+}
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+    
+    #vdsl-heading-question {
+     margin-top: 1rem;
+    }
+    
+
+    #vdsl-question-one{
+        margin-bottom: 90%;
+    }
+
+    
+    #vdsl-question-two {
+        margin-bottom: 90%;
+    }
+
+    
+    #vdsl-question-three {
+        margin-bottom: 90%;
+    }
+
+
+    
+    
+    
+    
+    
+}
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+    
+    h1.dedicated-heading {
+/*        font-size: 36px !important;*/
+        text-align: center;
+    }
+    
+
+    h1.symmetric-heading {
+        text-align: center;
+    }
+    
+    .symmetric-para {
+        text-align: center;
+    }
+    
+    .dedicated-para {
+        text-align: center;
+    }
+    
+    
+}
+
+
+@media only screen and (max-width:576px) {
+    p.symmetric-info {
+        margin: 0px;
+    }
+    
+    p.dedicated-info {
+        margin: 0px;
+        
+    }
+    
+    
+    h1.symmetric-heading {
+/*       font-size: 2rem !important;*/
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+
+    .dedicated-para {
+        font-size: 1.2rem;
+    }
+    
+    
+    .symmetric-para {
+        font-size: 1.2rem;
+    }
+    
+    
+    #adsl-heading-two {
+        margin-top: -1.5rem;
+    }
+    
+    
+    #adsl-heading-one {
+        margin-top: -0.2rem;
+    }
+    
+    
+    #adsl-heading-three {
+        margin-top: 0.2rem;
+    }
+    
+    
+    #adsl-heading-four {
+        margin-top: -1.5rem;
+    }
+    
+    
+    #adsl-heading-five {
+        margin-top: 0.2rem;
+    }
+    
+    #adsl-heading-six {
+        margin-top: -1.5rem;
+    }
+     
+    #adsl-heading-seven {
+        margin-top: 0.2rem;
+    }
+    
+    #adsl-heading-eight {
+        margin-top: -1.5rem;
+    }
+    
+    
+    #adsl-heading-nine {
+        margin-top: 0.2rem;
+    }
+    
+    #adsl-heading-ten {
+        margin-top: -1.5rem;
+    }
+    
+    
+    #vdsl-heading-one {
+        margin-top: 3rem;
+    }
+    
+    
+     #vdsl-heading-two {
+          margin-top: -3rem;
+    }
+    
+      #vdsl-heading-three {
+        margin-top: 3rem;
+    }
+    
+    
+     #vdsl-heading-four.vdsl-heading.heading {
+          margin-top: -3rem;
+    }
+    
+    #vdsl-heading-five {
+        margin-top: 3rem;
+    }
+    
+    #vdsl-heading-six {
+        margin-top: -3rem;
+    }
+    
+    
+    
+    
+   button.btn-warning.w3-btn {
+        position: absolute;
+        
+/*        bottom: 1rem !important;*/
+        
+    }
+  
+}
+
+
+
+@media only screen and (max-width: 991px) {
+    .dedicated-back {
+        overflow-y: hidden;
+       
+/*
+        white-space: nowrap;
+        overflow: hidden;
+*/
+    }
+    
+    
+        div.adsl-package-features h2:nth-child(3) {
+        margin-bottom: 50px;
+    }
+    
+    div.adsl-package-features h2:nth-child(2) {
+        margin-top: 30px;
+    }
+    
+    
+    
+    
+    
+    p.dedicated-info {
+        margin-top: 60px;
+        font-size: 1rem;
+    }
+    
+    h1.dedicated-heading {
+        font-size: 2.6rem;
+    }
+    
+     h1.symmetric-heading {
+         font-size: 2.6rem;
+    }
+    h2.adsl-question {
+        margin-bottom: 30%;
+    }
+    
+    .dedicated-para {
+        font-size: 1.5rem;
+    }
+    
+    
+    .symmetric-back {
+        overflow-y: hidden;
+    }
+    
+    p.symmetric-info {
+        margin-top: 50px;
+        font-size: 1rem;
+        padding: 0px;
+    }
+    
+    img.logo {
+        display: none;
+    }
+    
+    .symmetric-para {
+        font-size: 1.5rem;
+    }
+    
+   
+    
+      button.navbar-toggler {
+        right: 0;
+    }
+    
+    
+    
+}
+
+
+
+
+
+
+@media only screen and (min-width: 992px) {
+    .dedicated-para {
+        font-size: 1.8rem;
+    }
+    
+    
+    .symmetric-para {
+        font-size: 1.8rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:576px) {
+    p.symmetric-info {
+        margin: 0px;
+    }
+    
+    p.dedicated-info {
+        margin: 0px;
+        
+    }
+    
+    
+    h1.symmetric-heading {
+/*       font-size: 2rem !important;*/
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+
+@media only screen and (max-width: 991px) {
+    #adsl-heading-two {
+        margin-top: -1.5rem;
+    }
+    
+    
+    #adsl-heading-one {
+        margin-top: -0.2rem;
+    }
+    
+    
+    #adsl-heading-three {
+        margin-top: 0.2rem;
+    }
+    
+    
+    #adsl-heading-four {
+        margin-top: -1.5rem;
+    }
+    
+    
+    #adsl-heading-five {
+        margin-top: 0.2rem;
+    }
+    
+    #adsl-heading-six {
+        margin-top: -1.5rem;
+    }
+     
+    #adsl-heading-seven {
+        margin-top: 0.2rem;
+    }
+    
+    #adsl-heading-eight {
+        margin-top: -1.5rem;
+    }
+    
+    
+    #adsl-heading-nine {
+        margin-top: 0.2rem;
+    }
+    
+    #adsl-heading-ten {
+        margin-top: -1.5rem;
+    }
+    
+    
+    #vdsl-heading-one {
+        margin-top: 3rem;
+    }
+    
+    
+     #vdsl-heading-two {
+          margin-top: -3rem;
+    }
+    
+      #vdsl-heading-three {
+        margin-top: 3rem;
+    }
+    
+    
+     #vdsl-heading-four {
+          margin-top: -3rem;
+    }
+    
+    #vdsl-heading-five {
+        margin-top: 3rem;
+    }
+    
+    #vdsl-heading-six {
+        margin-top: -3rem;
+    }
+    
+}
+
+
+@media only screen and (min-width: 992px) {
+    
+    
+    div.adsl button.btn__sale {
+        padding: 0.8rem ;
+    }
+    
+     div.vdsl button.btn__sale {
+        padding: 
+    }
+    
+    
+    
+    
+    
+    
+    h2.adsl-question question {
+        margin: 
+    }
+    
+    
+    h2.adsl-question.question {
+        margin-top: -3rem;
+    }
+    
+    
+    
+    
+    #wifi-heading-one {
+        margin-top: -2.5rem;
+    }
+    
+    
+    
+      
+    #wifi-heading-three {
+        margin-top: -2.5rem;
+    }
+    
+    
+      #wifi-heading-five {
+        margin-top: -2.5rem;
+    }
+    
+    
+    h2#vdsl-heading-two.vdsl-heading.heading {
+        margin-top: -9rem;
+    }
+    
+    
+    
+    h2#vdsl-heading-four.vdsl-heading.heading {
+        margin-top: -9rem;
+    }
+    
+       
+    h2#vdsl-heading-six.vdsl-heading.heading {
+        margin-top: -9rem;
+    }
+    
+    
+    
+    
+}
+
+
+
+
+@media only screen and (max-width: 991px) {
+        div.vdsl button.btn__sale {
+        padding: 0.5rem 1rem;
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1199px) {
+
+   .adsl-price div.col.lira {
+        font-size: 0.8rem !important;
+    }
+    
+      button.navbar-toggler {
+          position: absolute;
+          top: 0;
+          right: 0;
+    }
+    
+    
+    
+    h2.adsl-heading.heading {
+        margin-top: 0rem;
+    }
+    
+    #adsl-heading-two{
+        margin-top: -3rem;
+    }
+     #adsl-heading-four{
+        margin-top: -3rem;
+    }
+     #adsl-heading-six{
+        margin-top: -3rem;
+    }
+     #adsl-heading-eight{
+        margin-top: -3rem;
+    }
+     #adsl-heading-ten{
+        margin-top: -3rem;
+    }
+    
+}
+
+
+
+@media only screen and (min-width: 1199px) {
+    
+    #adsl-heading-one {
+        margin-top: -1rem;
+    }
+    #adsl-heading-two{
+        margin-top: -3rem;
+    }
+    #adsl-heading-three {
+        margin-top: -1rem;
+    }
+    
+     #adsl-heading-four{
+        margin-top: -3rem;
+    }
+    
+    #adsl-heading-five {
+        margin-top: -1rem;
+    }
+     #adsl-heading-six{
+        margin-top: -3em;
+    }
+    
+    
+    #adsl-heading-seven {
+        margin-top: -1rem;
+    }
+    
+    
+     #adsl-heading-eight{
+        margin-top: -3rem;
+    }
+    
+    
+    #adsl-heading-nine {
+        margin-top: -1rem;
+    }
+     #adsl-heading-ten{
+        margin-top: -3rem;
+    }
+    
+    
+}
+}

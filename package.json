@@ -1,0 +1,15 @@
+{
+  "name": "kibrisonline",
+  "version": "1.0.0",
+  "description": "Landing page for kibris online",
+  "main": "bootstrap.min.js",
+  "scripts": {
+    "compile:sass": "node-sass"
+  },
+  "author": "Nez Mustafa",
+  "license": "ISC",
+
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
