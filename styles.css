@@ -10,10 +10,10 @@
 
 :root {
     --anthracite-grey: #293133;
-    --primary-color: #3b79bd;
-    --secondary-color: #67319a;
-    --tertiary-color: #f31d98;
-    --quaternary-color: #ef892a;
+    --primary-color: #3f3f9e;
+    --secondary-color: #882796;
+    --tertiary-color: #ea0a2a;
+    --quaternary-color: #ef722a;
     --quinary-color: #efcb2a;
 }
 
@@ -545,6 +545,11 @@ span.bit {
     
 } 
 
+div.text-tructate {
+    
+    margin: 0 auto;
+    display: inline-block;
+}
 
 
 
@@ -623,10 +628,12 @@ div.dedicated-back .price {
 }
 
 .border-dash-left {
-    border: 1px dashed #ccc;
+    border: 3px dashed #ccc;
     border-radius: 20%;
     padding: 0.6rem;
     margin: 0.1rem;
+    max-width: 100px;
+    
 }
 
 div.row .no-gutters {
@@ -786,7 +793,7 @@ h3.num.vdsl {
 
 
 ul.netfeatures.vdsl {
-    color: rgb(174,31,138);
+    color: #ea0a2a !important;
 }
 
 
@@ -1021,22 +1028,66 @@ span.month, .text-truncate {
 
 
 .dedicated-info {
-    font-size: 1rem;
-    color: rgb(122,122,122);
+    font-size: 1.4rem;
+    color: white;
+    padding-top: 0px;
+    margin-bottom: -.1rem;
     font-weight: bold;
     
 }
 
 
+#simetrik .col-12 {
+    border-radius: 35px;
+    color: white;
+    background-color: #ef722a;
+    max-height: 26rem;
+    position: relative;
+}
+
+
+#dedicated .col-12 {
+    border-radius: 50px;
+    color: white;
+    background-color: #efcb2a;
+    max-height: 27rem;
+/*    position: relative;*/
+}
+
+
+.dedicated-img {
+    border-radius: 35px 0 0 35px;
+    position: relative;
+    left: -5%;
+    bottom: 0%;
+    background-position: cover;
+}
+
+.symmetric-img {
+    border-radius: 35px 0 0 35px ;
+/*    max-width: 2rem !important; */
+    position: absolute;
+    left: 0%;
+    top: -10%;
+    background-position: cover;
+
+}
+
+
 .symmetric-para {
-    font-size: 1rem;
+    font-size: 1rem !important;
+}
+
+.dedicated-para {
+    font-size: 1rem !important;
 }
 
 .symmetric-info {
     
-    font-size: 1rem;
-    color: rgb(122,122,122);
-/*    padding-top: 20px;*/
+    font-size: 1.4rem;
+    color: white;
+     padding-top: 0px;
+    margin-bottom: -.1rem;
     font-weight: bold;
     
     
@@ -1068,126 +1119,6 @@ ul li {
    UI CARD
    ========================= */
 
-
-/*
-card_body {
-  background: #111d27;
-  color: #111;
-  min-width: 390px;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-  -webkit-backface-visibility: hidden;
-  position: relative;
-  padding: 50px 20px;
-}
-
-.pricing {
-	text-align: center;
-	border: 1px solid #f0f0f0;
-	color: #777;
-	font-size: 14px;
-	padding-left: 0;
-	margin-bottom: 30px;
-  font-family: 'Lato';
-}
-.pricing img {
-	display: block;
-	margin: auto;
-	width: 32px;
-}
-
-li.col-4-md.price-bottom {
-    padding: 0px;
-    margin: 0 auto;
-}
-.pricing li:first-child,
-.pricing li:last-child {
-	padding: 0px 0px;
-}
-
-li.price-bottom h3 {
-    font-size: 0.9rem;
-}
-.pricing li {
-	list-style: none;
-	padding: 13px;
-}
-.pricing li + li {
-	border-top: 1px solid #f0f0f0;
-}
-.pricing big {
-	font-size: 32px;
-}
-.pricing h3 {
-	margin-bottom: 0;
-  font-size: 1.2rem;
-}
-.pricing span {
-	font-size: 12px;
-	color: #999;
-	font-weight: normal;
-}
-.pricing li:nth-last-child(2) {
-	padding: 0px 0px;
-}
-.pricing button {
-	width: auto;
-	margin: auto;
-	font-size: 15px;
-	font-weight: bold;
-	border-radius: 50px;
-	color: #fff;
-	padding: 9px 24px;
-	background: #aaa;
-	opacity: 1;
-	transition: opacity .2s ease;
-  border: none;
-  outline: none;
-}
-.pricing button:hover {
-	opacity: .9;
-}
-.pricing button:active {
-	box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.1);
-}
-/* pricing color */
-
-*/
-/*
-.p-purple big,
-.p-purple h3 {
-	color: rgb(174,31,138);
-}
-.p-purple button {
-	background: rgb(174,31,138);
-}
-.p-yel big,
-.p-yel h3 {
-	color: #ffbb42;
-}
-.p-yel button {
-	background: #ffbb42;
-}
-.p-red big,
-.p-red h3 {
-	color: #e13c4c;
-}
-.p-red button {
-	background: #e13c4c;
-}
-.p-blue big,
-.p-blue h3 {
-	color: #3f4bb8;
-}
-.p-blue button {
-	background: #3f4bb8;
-}
-
-
-
-*/
 
 
 /* =========================
@@ -1428,18 +1359,11 @@ h2#ulas:after {
 
 
 
-
-
-
-
 @media only screen and (min-width: 991px) {
     h2.wifi-question.question {
-        margin-top: -6rem;
+        margin-top: -4rem;
     }
 }
-
-
-
 
 
 
@@ -1450,6 +1374,19 @@ div.container.logo {
         max-width: 90% !important;
     }
 
+    
+    #vdsl-question-one {
+    margin-bottom: 100%;
+}
+    
+    #vdsl-question-two {
+    margin-bottom: 100%;
+}
+    #vdsl-question-three {
+/*    margin-bottom: 100%;*/
+}
+    
+    
     
 }
 
@@ -1476,16 +1413,39 @@ div.container.logo {
 
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
+    
+   
     adsl-price  div.col.lira {
         font-size: 0.1rem;
     }
     h2.adsl-question.question {
-        margin-top: -3rem;
+        margin-top: -2rem;
+    }
+      .wifi-question {
+    margin-top: 1rem;
+    }
+
+    
+     div.thecard.adsl-card {
+        width: 50%;
+        margin: 0 auto;
     }
     
-  
+    
+    
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1497,12 +1457,24 @@ div.container.logo {
     }
     
     div.adsl-package-features.package-features.speed h2 {
-        font-size: 1.5rem !important;
+        font-size: 1.2rem !important;
     }
     
-    .wifi-question {
-    margin-top: -3.7rem;
+    
+    
+    .wifi-question.question {
+        margin-top: -4.3rem;
     }
+    
+      div.thecard.adsl-card {
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+    
+/*    .wifi-question {*/
+/*    margin-top: -4.3rem;*/
+/*    }*/
     
     #wifi-heading-one {
         margin-top: -3rem;
@@ -1517,9 +1489,23 @@ div.container.logo {
     }
     
     
-   
+    div.thecard.adsl-card {
+/*        width: 50%;*/
+        margin: 0 auto;
+    }
     
-    a.nav-link{
+    
+    
+    div.lira.border-dash-left {
+        max-width: 7rem;
+        
+    }
+    
+    
+    
+    
+    
+    a.nav-link {
         text-align: center;
         margin: 0 auto;
     }
@@ -1540,6 +1526,19 @@ div.container.logo {
         width: 100%;
     }
     
+    
+    #simetrik .col-12 {
+       max-height: 16rem;
+    
+    }
+    
+    #dedicated .col-12 {
+        max-height: 16rem;
+    }
+    
+    ul.deidacted-para li {
+        font-size: 0.1rem;
+    }
     
     
     
@@ -1636,10 +1635,15 @@ div.container.logo {
         color: white;
     }
     
+      
+    #simetrik .col-12 {
+       max-height: 27rem;
+    
+    }
     
     .dedicated-para {
        font-size: 0.8rem;
-       color: rgb(122,122,122);
+/*       color: rgb(122,122,122);*/
        font-weight: 300;
     }
     
@@ -1668,7 +1672,7 @@ div.container.logo {
 /*        font-size: 1.4rem;*/
     }
     ul.symmetric-para {
-        font-size: 1.2rem;
+        font-size: 1rem !important;
     }
     
     ul.dedicated-para {
@@ -1678,6 +1682,17 @@ div.container.logo {
     div.wifi-package-features.package-features.speed h2 {
         font-size: 1.5rem !important;
     }
+        
+     
+    .wifi-question.question {
+        margin-top: 1rem;
+    }
+    
+    
+    p.symmetric-info {
+        font-size: 0.8rem !important;
+    }
+    
     
     
 }
@@ -1712,6 +1727,10 @@ div.container.logo {
  .container.logo {
     max-width: 100%;
 }
+    
+    .wifi-question.question {
+       
+    }
 }
 
 
@@ -1728,6 +1747,11 @@ div.container.logo {
 
 
 @media only screen and (min-width: 768px) {
+    
+    
+    
+    
+    
     
     #vdsl-heading-question {
      margin-top: 1rem;
@@ -1770,6 +1794,7 @@ div.container.logo {
 
     h1.symmetric-heading {
         text-align: center;
+        margin-top: -1rem;
     }
     
     .symmetric-para {
@@ -1810,14 +1835,37 @@ div.container.logo {
 
 
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 769px) {
+    
+
+      
+    h2.vdsl-question, h2.vdsl-heading {
+        font-size: 1.5rem !important;
+    }
+    
+    
+    .vdsl-question.question {
+        margin-top: -2rem;
+    }
+    
+    #vdsl div.col-lg-4.col-md-4 {
+        width: 60%;
+        margin: 0 auto;
+    }
+    
+    
+    .nedir {
+        display:none;
+    }
 
     .dedicated-para {
+        display: none;
         font-size: 1.2rem;
     }
     
     
     .symmetric-para {
+        display: none;
         font-size: 1.2rem;
     }
     
@@ -1903,12 +1951,21 @@ div.container.logo {
 /*        bottom: 1rem !important;*/
         
     }
+    
+    div.col-12 {
+        max-height: 12rem !important;
+    }
+    
+    .symmetric-img {
+        top: -20%;
+        left: 0%;
+    }
   
 }
 
 
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 992px) {
     .dedicated-back {
         overflow-y: hidden;
        
@@ -1916,7 +1973,23 @@ div.container.logo {
         white-space: nowrap;
         overflow: hidden;
 */
+        
     }
+    
+    
+    
+    ul.dedicated-para {
+        font-size: 0.8rem;
+    }
+    
+    div.col-8 {
+        margin-bottom: 8rem;
+    }
+    div.col-8 .mt-auto.price{
+        margin-bottom: -1rem;
+    }
+    
+    
     
     
         div.adsl-package-features h2:nth-child(3) {
@@ -1929,26 +2002,31 @@ div.container.logo {
     
     
     
-    
+    ul.symmetric-para {
+        font-size: 0.8rem !important;
+    }
     
     p.dedicated-info {
-        margin-top: 60px;
+/*        margin-top: 50px;*/
         font-size: 1rem;
     }
     
     h1.dedicated-heading {
-        font-size: 2.6rem;
+        font-size: 1.6rem;
+   
     }
     
      h1.symmetric-heading {
-         font-size: 2.6rem;
+         font-size: 1.6rem;
+         margin-bottom: -2rem;
     }
     h2.adsl-question {
-        margin-bottom: 30%;
+/*        margin-bottom: 30%;*/
     }
     
-    .dedicated-para {
-        font-size: 1.5rem;
+    ul.dedicated-para {
+        font-size: 0.8rem !important;
+/*        font-weight: 100;*/
     }
     
     
@@ -1957,8 +2035,8 @@ div.container.logo {
     }
     
     p.symmetric-info {
-        margin-top: 50px;
-        font-size: 1rem;
+/*        margin-top: 50px;*/
+        font-size: 0.9rem;
         padding: 0px;
     }
     
@@ -1967,7 +2045,13 @@ div.container.logo {
     }
     
     .symmetric-para {
-        font-size: 1.5rem;
+        display: none;
+        
+    }
+    
+    .dedicated-para {
+        display: none;
+        
     }
     
    
@@ -2148,18 +2232,18 @@ div.container.logo {
     
     
     h2#vdsl-heading-two.vdsl-heading.heading {
-        margin-top: -9rem;
+        margin-top: -12rem;
     }
     
     
     
     h2#vdsl-heading-four.vdsl-heading.heading {
-        margin-top: -9rem;
+        margin-top: -12rem;
     }
     
        
     h2#vdsl-heading-six.vdsl-heading.heading {
-        margin-top: -9rem;
+        margin-top: -12rem;
     }
     
     
