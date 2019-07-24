@@ -594,6 +594,7 @@ h2#ulas {
 div.col-4.dedicated  {
    width: initial;
    height: 100%;
+   bottom: 2rem;
 }
 
 /*div.col-4.dedicated img {
@@ -906,7 +907,7 @@ div.vdsl-package-features {
 
 #vdsl-heading-one {
     position: absolute;
-    margin-top: 60px;
+    margin-top: 5rem;
     
 }
 
@@ -921,7 +922,7 @@ div.vdsl-package-features {
 
 #vdsl-heading-three {
     position: absolute;
-    margin-top: 60px;
+    margin-top: 5rem;
 }
 
 
@@ -935,7 +936,7 @@ div.vdsl-package-features {
 
 #vdsl-heading-five {
     position: absolute;
-    margin-top: 60px;
+    margin-top: 5rem;
 }
 
 
@@ -1057,19 +1058,19 @@ span.month, .text-truncate {
 
 .dedicated-img {
     border-radius: 35px 0 0 35px;
-    position: relative;
+    position: absolute;
     left: -5%;
-    bottom: 0%;
-    background-position: cover;
+    top: 0%;
+/*    background-position: cover;*/
 }
 
 .symmetric-img {
     border-radius: 35px 0 0 35px ;
-/*    max-width: 2rem !important; */
+    max-width: 30rem !important; 
     position: absolute;
     left: 0%;
     top: -10%;
-    background-position: cover;
+/*    background-position: cover;*/
 
 }
 
@@ -1359,11 +1360,24 @@ h2#ulas:after {
 
 
 
+
+
+
+
+
+
+
+
 @media only screen and (min-width: 991px) {
     h2.wifi-question.question {
         margin-top: -4rem;
     }
 }
+
+
+
+
+
 
 
 
@@ -1395,6 +1409,82 @@ div.container.logo {
 
 
 
+@media only screen and (min-width: 500px) and (max-width: 577px) {
+    
+   
+    #dedicated .col-12 {
+      max-height: 11.4rem !important;
+    }
+    
+    
+    #simetrik .col-12 {
+        max-height: 11.4rem !important;
+    }
+    
+}
+
+
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+    
+      
+      #simetrik .col-12 {
+        max-height: 11.4rem !important;
+    }
+    
+    
+      #dedicated .col-12 {
+        max-height: 11.4rem !important;
+    }
+    
+}
+
+
+
+
+
+@media only screen and (min-width: 991px) and (max-width: 1199px) {
+    
+   
+    #dedicated .col-12 {
+      max-height: 20.9rem !important;
+    }
+    
+    
+    #simetrik .col-12 {
+        max-height: 21.4rem !important;
+    }
+    
+}
+
+
+@media only screen and (min-width: 1199px) and (max-width: 1440px) {
+    
+   
+    #dedicated .col-12 {
+      max-height: 24.9rem !important;
+    }
+    
+    
+    #simetrik .col-12 {
+        max-height: 25.6rem !important;
+    }
+    
+}
+
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .symmetric-img {
+ 
+    left: 0%;
+    top: -16%;
+  
+}
+
+}
 
 @media only screen and (max-width: 767px) {
     
@@ -1407,9 +1497,6 @@ div.container.logo {
     margin-bottom: 1.9rem;
 }
 }
-
-
-
 
 
 
@@ -1433,21 +1520,7 @@ div.container.logo {
     }
     
     
-    
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @media only screen and (max-width: 991px) {
@@ -1502,7 +1575,13 @@ div.container.logo {
     }
     
     
-    
+    .dedicated-img {
+    border-radius: 35px 0 0 35px;
+    position: absolute;
+    left: -7%;
+    top: 0%;
+/*    background-position: cover;*/
+}
     
     
     a.nav-link {
@@ -1758,7 +1837,7 @@ div.container.logo {
     }
     
 
-    #vdsl-question-one{
+    #vdsl-question-one {
         margin-bottom: 90%;
     }
 
@@ -1781,29 +1860,24 @@ div.container.logo {
 }
 
 
-
-
-
 @media only screen and (min-width: 768px) {
     
-    h1.dedicated-heading {
-/*        font-size: 36px !important;*/
+    h1.dedicated-heading, h1.symmetric-heading {
+/*        margin-top: -1rem;*/
         text-align: center;
+        z-index: 3;
     }
     
 
-    h1.symmetric-heading {
-        text-align: center;
-        margin-top: -1rem;
-    }
+
     
-    .symmetric-para {
+    .symmetric-para, .dedicated-para {
         text-align: center;
     }
     
-    .dedicated-para {
-        text-align: center;
-    }
+   
+    
+    
     
     
 }
@@ -1953,19 +2027,20 @@ div.container.logo {
     }
     
     div.col-12 {
-        max-height: 12rem !important;
+        max-height: auto;
     }
     
     .symmetric-img {
-        top: -20%;
+        top: -15%;
         left: 0%;
+        height: auto;
     }
   
 }
 
 
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
     .dedicated-back {
         overflow-y: hidden;
        
@@ -1986,7 +2061,7 @@ div.container.logo {
         margin-bottom: 8rem;
     }
     div.col-8 .mt-auto.price{
-        margin-bottom: -1rem;
+/*        margin-bottom: -1rem;*/
     }
     
     
@@ -2007,8 +2082,8 @@ div.container.logo {
     }
     
     p.dedicated-info {
-/*        margin-top: 50px;*/
-        font-size: 1rem;
+        margin-top: 1rem;
+        font-size: 0.9rem;
     }
     
     h1.dedicated-heading {
@@ -2018,7 +2093,7 @@ div.container.logo {
     
      h1.symmetric-heading {
          font-size: 1.6rem;
-         margin-bottom: -2rem;
+/*         margin-bottom: -2rem;*/
     }
     h2.adsl-question {
 /*        margin-bottom: 30%;*/
@@ -2030,12 +2105,17 @@ div.container.logo {
     }
     
     
+    
+    p.symmetric-info,p.dedicated-info {
+        
+    }
+    
     .symmetric-back {
         overflow-y: hidden;
     }
     
     p.symmetric-info {
-/*        margin-top: 50px;*/
+        margin-top: 1rem;
         font-size: 0.9rem;
         padding: 0px;
     }
@@ -2053,6 +2133,8 @@ div.container.logo {
         display: none;
         
     }
+    
+    
     
    
     
@@ -2073,10 +2155,16 @@ div.container.logo {
     .dedicated-para {
         font-size: 1.8rem;
     }
-    
+    p.dedicated-info {
+        font-size: 1rem;
+    }
     
     .symmetric-para {
         font-size: 1.8rem;
+    }
+    
+    p.symmetric-info {
+        font-size: 1rem;
     }
 }
 
@@ -2330,7 +2418,7 @@ div.container.logo {
     #adsl-heading-five {
         margin-top: -1rem;
     }
-     #adsl-heading-six{
+     #adsl-heading-six {
         margin-top: -3em;
     }
     
@@ -2340,7 +2428,7 @@ div.container.logo {
     }
     
     
-     #adsl-heading-eight{
+     #adsl-heading-eight {
         margin-top: -3rem;
     }
     
@@ -2348,10 +2436,34 @@ div.container.logo {
     #adsl-heading-nine {
         margin-top: -1rem;
     }
-     #adsl-heading-ten{
+     #adsl-heading-ten {
         margin-top: -3rem;
     }
     
     
 }
+
+
+
+
+
+
+@media only screen and (min-width: 500px) and (max-width: 577px) {
+    
+   
+    #simetrik .col-12 {
+      max-height: 10.5rem !important;
+    }
+    
+    
+    
+    
+}
+
+
+
+
+
+
+
 }
