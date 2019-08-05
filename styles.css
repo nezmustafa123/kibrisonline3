@@ -381,10 +381,10 @@ textarea[name=Mesaj] {
  
 }
 
-.maincontainer{
+.maincontainer {
   position: relative;
   /*width: 250px;*/
-  height: 500px;
+  height: 40rem;
   background: none;
   margin-top: 30px;
 /*  top: 0%;*/
@@ -395,7 +395,7 @@ textarea[name=Mesaj] {
 
 /* THE CARD HOLDS THE FRONT AND BACK FACES */
 
-.thecard{
+.thecard {
   position: relative;
   top: 0;
   left: 0;
@@ -488,6 +488,7 @@ h1.bit {
 
 div.speed {
     font-size: 0.5rem;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -837,7 +838,7 @@ div.vdsl-package-features {
 
 .question {
     font-weight: bold;
-    margin-bottom: 40%;
+    margin-bottom: 65%;
 }
 
 
@@ -845,16 +846,24 @@ div.vdsl-package-features {
 
 #wifi-heading-one {
     position: absolute;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 2.5rem !important;
 }
 
 #wifi-heading-two {
     position: absolute;
-    padding: 20px;
+    padding: 10px;
     
     
 }
 
+
+#wifi-heading-two-extra {
+    position: absolute;
+    padding-bottom: 10px;
+    margin-top: -2.4rem;
+    
+}
 #wifi-heading-three {
     position: absolute;
 /*    padding: 20px;*/
@@ -862,7 +871,7 @@ div.vdsl-package-features {
 
 #wifi-heading-four {
     position: absolute;
-    padding: 20px;
+    padding: 10px;
 }
 
 
@@ -873,7 +882,7 @@ div.vdsl-package-features {
 
 #wifi-heading-six {
     position: absolute;
-    padding: 20px;
+    padding: 10px;
 }
 
 
@@ -2175,6 +2184,12 @@ div.container.logo {
 
 
 
+@media (max-width:992px) and (min-width:1199px) {
+    .vdsl-question.question {
+        margin-top: 10% !important;
+    }
+}
+
 
 
 
@@ -2303,19 +2318,19 @@ div.container.logo {
     
     
     #wifi-heading-one {
-        margin-top: -2.5rem;
+        margin-top: -5.5rem;
     }
     
     
     
       
     #wifi-heading-three {
-        margin-top: -2.5rem;
+        margin-top: -5.5rem;
     }
     
     
       #wifi-heading-five {
-        margin-top: -2.5rem;
+        margin-top: -5.5rem;
     }
     
     
